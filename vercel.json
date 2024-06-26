@@ -7,6 +7,9 @@
       "config": { "runtime": "python3.8" }
     }
   ],
+  "hooks": {
+    "build": "apt-get update && apt-get install -y libxml2-dev libxslt-dev"
+  }
   "routes": [
     {
       "src": "/(.*)",
